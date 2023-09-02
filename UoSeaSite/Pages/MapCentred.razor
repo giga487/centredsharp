@@ -14,7 +14,7 @@
     </p>
 </section>
 <section id="map">
-
+    <img src="StaticFiles/StaticFile/Map/felucca-locations.jpg" alt="default"  style="width:800px;height:500px;">
 
 </section>
 
@@ -22,8 +22,15 @@
     [Parameter]
     public string MapUrl { get; set; } = string.Empty;
 
+    //public Map CurrentMap { get; private set; }
+
+
     protected override void OnInitialized()
     {
+        string fileToManage = "StaticFile/map0.mul";
+
+
+
         // string mapFileName = configuration.GetValue<string>("MapSection:FileName", "")??$@"\images\error.jpeg";
         // MapUrl = mapFileName;
 

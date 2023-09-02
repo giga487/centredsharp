@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.Extensions.FileProviders;
 using UoSeaSite.Data;
 
 namespace UoSeaSite
@@ -27,7 +29,23 @@ namespace UoSeaSite
 
 			app.UseHttpsRedirection();
 
-			app.UseStaticFiles();
+            string physicalPath = (string)builder.Configuration.GetValue<string>("UOSeaServer:StasticFilePath");
+
+            app.UseStaticFiles();
+			app.UseFileServer(new FileServerOptions()
+            {
+                FileProvider = new PhysicalFileProvider(physicalPath),
+                RequestPath = new PathString("/StaticFiles"),
+                EnableDirectoryBrowsing = true
+            });
+
+            //app.UseDirectoryBrowser(new DirectoryBrowserOptions()
+            //{
+            //    FileProvider = new PhysicalFileProvider(physicalPath),
+            //    RequestPath = new PathString("/StaticFiles")
+            //});
+
+            app.UseStaticFiles();
 
 			app.UseRouting();
 

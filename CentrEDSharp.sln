@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CentrED", "CentrED\CentrED.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UoSeaSite", "UoSeaSite\UoSeaSite.csproj", "{8103AD26-6DE6-4963-B428-EC5A1A0913EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOWebAppTest", "UOWebAppTest\UOWebAppTest.csproj", "{B45E4FB6-147B-4FE1-9310-F034D375FBA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8103AD26-6DE6-4963-B428-EC5A1A0913EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8103AD26-6DE6-4963-B428-EC5A1A0913EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8103AD26-6DE6-4963-B428-EC5A1A0913EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45E4FB6-147B-4FE1-9310-F034D375FBA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45E4FB6-147B-4FE1-9310-F034D375FBA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45E4FB6-147B-4FE1-9310-F034D375FBA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45E4FB6-147B-4FE1-9310-F034D375FBA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
