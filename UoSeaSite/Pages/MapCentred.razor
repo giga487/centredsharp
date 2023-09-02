@@ -1,0 +1,32 @@
+﻿@page "/MapCentred"
+@using SkiaSharp.Views.Blazor;
+@inject IConfiguration configuration;
+
+<PageTitle>Map, NOW!</PageTitle>
+
+<section id="main">
+    <h1>Map developed with CENTRED SHARP</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolor lectus, elementum nec velit non, gravida lobortis justo. 
+        Donec eu pretium eros, a maximus odio. Nulla lobortis facilisis bibendum. Integer rhoncus lacus eu nibh vehicula congue.
+        Aenean ac metus nisi. Praesent suscipit lorem sed auctor elementum. Maecenas fringilla, turpis a posuere accumsan, felis nisl 
+        venenatis eros, pretium semper lacus libero eu turpis. Donec aliquet nunc ac sagittis fringilla.
+    </p>
+</section>
+<section id="map">
+
+
+</section>
+
+@code {
+    [Parameter]
+    public string MapUrl { get; set; } = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        // string mapFileName = configuration.GetValue<string>("MapSection:FileName", "")??$@"\images\error.jpeg";
+        // MapUrl = mapFileName;
+
+
+    }
+}
